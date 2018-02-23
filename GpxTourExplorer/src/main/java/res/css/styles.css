@@ -1,0 +1,27 @@
+.command:focused{
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+}
+
+.tool:focused{
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+}
+
+.tool:selected{
+    -fx-background-color:
+        -fx-focus-color,
+        linear-gradient(to bottom,
+            derive(-fx-color, -22%) 0%,
+            derive(-fx-color, -13%) 20%,
+            derive(-fx-color, -11%) 50%),
+        -fx-faint-focus-color,
+        linear-gradient(to bottom,
+            derive(-fx-color, -22%) 0%,
+            derive(-fx-color, -13%) 20%,
+            derive(-fx-color, -11%) 50%);
+    -fx-background-insets: -0.2, 1, -1.4, 2.6;
+    -fx-background-radius: 3, 2, 4, 0;          	
+}
